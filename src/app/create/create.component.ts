@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { FormGroup, FormBuilder, Validators } from "@angular/forms";
-import { IssueService } from "../issue.service";
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { IssueService } from '../issue.service';
 
 @Component({
   selector: 'app-create',

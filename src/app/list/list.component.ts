@@ -35,7 +35,9 @@ export class ListComponent implements OnInit {
 
 
   deleteIssue(id) {
-    this.issueService.deleteAnIssue(id).subscribe(() => this.ngOnInit());
+    if(confirm('Are you sure you wanna delete this item?')) {
+      this.issueService.deleteAnIssue(id).subscribe(() => this.ngOnInit());
+    }
   }
 
 }

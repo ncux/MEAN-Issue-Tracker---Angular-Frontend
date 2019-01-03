@@ -15,7 +15,11 @@ export class EditComponent implements OnInit {
   issue: any = {};
   updateForm: FormGroup;
 
-  constructor(private issueService: IssueService, private router: Router, private activeRoute: ActivatedRoute, private snack: MatSnackBar, private formBuilder: FormBuilder) {
+  constructor(private issueService: IssueService,
+              private router: Router,
+              private activeRoute: ActivatedRoute,
+              private snack: MatSnackBar,
+              private formBuilder: FormBuilder) {
     this.updateForm = this.formBuilder.group({title: ['', Validators.required], responsible: '', description: '', severity: '', status: ''});
   }
 
